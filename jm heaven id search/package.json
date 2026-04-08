@@ -1,0 +1,26 @@
+{
+  "name": "jm-heaven-id-search",
+  "version": "1.0.0",
+  "description": "身份证地区识别漫画搜索 - 一个全栈 Web 应用",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"npm run backend\" \"npm run frontend\"",
+    "backend": "cd backend && npm install && npm start",
+    "frontend": "cd frontend && npm install && npm start",
+    "backend:dev": "cd backend && npm install && npm run dev",
+    "frontend:dev": "cd frontend && npm start",
+    "install:all": "npm install && cd backend && npm install && cd ../frontend && npm install"
+  },
+  "keywords": [
+    "身份证",
+    "地区",
+    "识别",
+    "漫画",
+    "搜索"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.0.0"
+  }
+}
